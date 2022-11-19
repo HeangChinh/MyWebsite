@@ -1,0 +1,127 @@
+*{
+  font-family: sans-serif;
+}
+
+/* === Nav bar === */
+.navbar-brand{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.navbar-nav{
+  margin-left: 30px;
+}
+.navbar-nav .nav-item{
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+.navbar-nav .nav-item #active{
+  font-weight: bold;
+  color: #38d4ff;
+}
+.navbar-nav .nav-item .nav-link:hover{
+  color: #38d4ff;
+}
+
+/* === Carousel === */
+.home .carousel-item img{
+  margin-top: 71px;
+}
+.carousel-control-next, .carousel-control-prev{
+  top: 71px;
+}
+.carousel-caption{
+  bottom: 240px;
+  z-index: 2;
+}
+.carousel-caption h5{
+  text-transform: uppercase;
+  font-size: 45px;
+  letter-spacing: 3px;
+}
+.carousel-caption p{
+  font-size: 16px;
+}
+.carousel-inner::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background:rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+/*=== Carousel Caption Responsive css */
+@media only screen and (min-width: 367px) and (max-width: 467px){
+  .carousel-caption{
+    bottom: 30px;
+  }
+  .carousel-caption p{
+    margin-top: -5px;
+    font-size: 9px;
+  }
+  .carousel-caption h5{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    top: 10px;
+  }
+}
+@media only screen and (min-width: 467px) and (max-width: 567px){
+  .carousel-caption{
+    bottom: 40px;
+  }
+  .carousel-caption p{
+    margin-top: -5px;
+    font-size: 11px;
+  }
+  .carousel-caption h5{
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (min-width: 567px) and (max-width: 767px){
+  .carousel-caption{
+    bottom: 80px;
+  }
+  .carousel-caption p{
+    font-size: 13px;
+    padding-bottom: 4px;
+  }
+  .carousel-caption h5{
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 991px){
+  .carousel-caption{
+    bottom: 130px;
+  }
+  .carousel-caption p{
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+  .carousel-caption h5{
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1092px){
+  .carousel-caption{
+    bottom: 145px;
+  }
+  .carousel-caption p{
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+  .carousel-caption h5{
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+  }
+}
