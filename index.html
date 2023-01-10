@@ -14,24 +14,38 @@
   <div>
     <header class="container">
       <nav class="nav align-items-center">
-        <div class="singature-svg">
+        <div class="singature-svg active">
           <a href="index.html">
             <img src="images/Signature.svg" alt="Ralph J. Smit-logo">
           </a>
           <div class="list-hidden">
             <div class="list-hidden-1"><i class="bi bi-list"></i></div>
+            <div class="list-hidden-2"><i class="bi bi-x-lg"></i></div>
           </div>
         </div>
-        <div class="art-pack-log">
-          <ul class="art-pack m-0 p-0">
-            <li><a href="">Articles</a></li>
-            <li class="ball"><a href="">Packages</a></li>
-          </ul>
-          <a class="login rounded-5 text-decoration-none" href="">Login</a>
+        <div class="art-pack-log active">
+          <div class="art-pack-log-1 column-gap-3">
+            <ul class="art-pack m-0 p-0">
+              <li><a href="">Articles</a></li>
+              <li class="ball"><a href="">Packages</a></li>
+            </ul>
+            <a class="login text-decoration-none" href="">
+              Login
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
         </div>
       </nav>
-      <div class="search fixed-bottom">
+      <!-- SEARCH -->
+      <div class="search active fixed-bottom">
         <i class="bi bi-search"></i>
+      </div>
+      <div class="search-bar active"></div>
+      <div class="search-background active">
+        <div class="search-bar-relative ">
+          <i class="bi bi-search ms-3"></i>
+          <input type="text" placeholder="Search posts...">
+        </div>
       </div>
     </header>
     <main class="container">
