@@ -344,6 +344,8 @@ body{
 }
 /*=======================================  END PREVIOUS NEXT  ===========================================================*/
 
+/*=======================================  END MAIN  ===========================================================*/
+
 /*=== FOOTER ===*/
 footer{
   background-color: black;
@@ -381,6 +383,7 @@ footer{
   font-family: 'Elephant';
   color: white;
   text-decoration: none;
+  overflow: hidden;
 }
 .footer-article h2{
   font-size: 22px;
@@ -416,9 +419,14 @@ footer{
 .copy-right .twitter-git img:hover{
   opacity: 100%;
 }
+.footer-article a img{
+  transform: scale(1);
+  transition: .1s ease-in-out;
+}
+.footer-article a img:hover{
+  transform: scale(1.05);
+}
 /*=======================================  END FOOTER  ===========================================================*/
-
-/*=======================================  END MAIN  ===========================================================*/
 
 /*=== RESPONSIVE (max-width : 639px) ===*/
 @media screen and (max-width : 639px) {
