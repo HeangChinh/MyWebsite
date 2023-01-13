@@ -169,6 +169,20 @@ body{
   word-spacing: -4px;
   margin-right: 20px;
 }
+
+  /*=== PACKAGES ===*/
+  .hidden.packages h6{
+    padding-top: 15px;
+    font-size: 15px;
+    line-height: 25px;
+    word-spacing: -1px;
+    margin-right: 10px;
+  }
+  .hidden.packages .h1{
+    width: 80%;
+  }
+  /*================================  END PACKAGES ======================================*/
+
 .form-hidden{
   border: 1px solid #f1f1f1;
   border-radius: 17px;
@@ -393,7 +407,7 @@ footer{
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  padding: 30px 0;
+  padding: 35px 0;
 }
 .copy-right .©{
   color: white;
@@ -551,6 +565,9 @@ footer{
   }
   .list-article{
     row-gap: 40px;
+  }
+  .hidden.packages .h1{
+    width: 100%;
   }
 }
 /*==================================  END RESPONSIVE MAX-WIDTH 639px  =================================*/
