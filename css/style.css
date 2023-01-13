@@ -426,6 +426,17 @@ footer{
 .footer-article a img:hover{
   transform: scale(1.05);
 }
+.w-force{
+  width: 100%;
+  height: 144px;
+  background-color: black;
+}
+.w-force div{
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  background-color: white;
+}
 /*=======================================  END FOOTER  ===========================================================*/
 
 /*=== RESPONSIVE (max-width : 639px) ===*/
@@ -619,6 +630,12 @@ footer{
   }
   .footer-article{
     grid-template-columns: repeat(4,minmax(0,1fr));
+  }
+  .w-force div{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 9999px;
+    background-color: white;
   }
 }
 @media screen and (min-width : 1024px){
