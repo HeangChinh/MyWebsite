@@ -8,7 +8,6 @@ const search_bar_relative = document.querySelector('.search-bar-relative');
 const search_bar_relative_input = document.querySelector('.search-bar-relative input');
 const search_bar_relative_i = document.querySelector('.search-bar-relative i');
 const search_bg = document.querySelector('.search-background');
-const nav_scroll = document.querySelector('.nav-scroll');
 
 list_hidden_1.addEventListener('click', (e) => {
   art_pack_log.classList.toggle('active');
@@ -39,6 +38,8 @@ search_bar.addEventListener('click', (e) => {
   search_bg.classList.toggle('active')
 });
 
+const nav_scroll = document.querySelector('.nav-scroll');
+const notify = document.querySelector('.notify');
 window.onscroll = function () {
   scrollFunction();
 }
@@ -50,5 +51,13 @@ function scrollFunction() {
   else {
     nav_scroll.style.top = '-200px'
     nav_scroll.style.transition = '0.1s'
+  }
+  if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400){
+    notify.style.transform = 'translateX(0)';
+    notify.style.position = 'fixed';
+    notify.style.bottom = '250px';
+  }
+  else{
+    notify.style.transform = 'translateX(-100%)';
   }
 }
