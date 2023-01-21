@@ -40,6 +40,7 @@ search_bar.addEventListener('click', (e) => {
 
 const nav_scroll = document.querySelector('.nav-scroll');
 const notify = document.querySelector('.notify');
+const x_notify = document.querySelector('.notify .bi-x');
 window.onscroll = function () {
   scrollFunction();
 }
@@ -52,12 +53,5 @@ function scrollFunction() {
     nav_scroll.style.top = '-200px'
     nav_scroll.style.transition = '0.1s'
   }
-  if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400){
-    notify.style.transform = 'translateX(0)';
-    notify.style.position = 'fixed';
-    notify.style.bottom = '250px';
-  }
-  else{
-    notify.style.transform = 'translateX(-100%)';
-  }
 }
+
