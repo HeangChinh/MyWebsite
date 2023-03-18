@@ -442,11 +442,31 @@ body{
 }
 /*=======================================  END PAGE DETAILS  ===========================================================*/
 
+/*=== LOGIN FORM ===*/
+.login-form{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.login-form .item-1{
+  display: block;
+  width: 544px;
+}
+.login-form .item-2{
+  display: block;
+  width: 50%;
+}
+.login-form .item-2 img{
+  width: 100%;
+}
+/*=======================================  END LOGIN FORM  ===========================================================*/
+
 /*=======================================  END MAIN  ===========================================================*/
 
 /*=== NOTIFY ===*/
 .notify{
   background: white;
+  display: block;
   position: fixed;
   border: 1px solid #e2e2e2;
   width: 443px;
@@ -457,6 +477,9 @@ body{
   border-bottom-right-radius: 10px;
   bottom: 220px;
   transition: .5s ease-in-out;
+}
+.notify.show{
+  transform: translateX(0%);
 }
 /* .notify{
   position: fixed;
